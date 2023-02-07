@@ -1,0 +1,275 @@
+@import "fonts"
+@import "vars"
+
+*body
+    +bold
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1728px
+    width: 95%
+    margin: auto
+
+
+
+
+.header
+    margin-top: 70px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-logo
+        display: flex
+        align-items: center
+    &-menu 
+        &__button
+            padding: 0
+            border: none
+            background: none
+            cursor: pointer
+    &-shop
+        display: flex
+        align-items: center
+    &-search
+        margin-left: 20px
+
+    &-icons
+        padding: 0
+        border: none
+        background: none
+        cursor: pointer
+        
+.main
+    &-info
+        width: 50%
+        @media (max-width: 800px)
+            width: 100%
+        &__title
+            display: block
+            margin: 0
+            font-size: 100px
+            line-height: 100px
+            margin-top: 140px
+            +bold
+            @media (max-width: 1500px)
+                margin-top: 70px
+                font-size: 80px
+            @media (max-width: 1200px)
+                font-size: 60px
+                line-height: 60px
+            @media (max-width: 900px)
+                font-size: 50px
+        &__subtitle
+            display: block
+            max-width: 400px
+            opacity: 0.65
+            line-height: 25px
+            font-weight: 200
+            margin-top: 65px
+            @media (max-width: 1500px)
+                margin-top: 40px
+                font-size: 15px
+            @media (max-width: 900px)
+                margin-top: 30px
+                font-size: 13px
+        &__buttons
+            display: flex
+            flex-wrap: wrap
+            
+            margin-top: 100px
+            @media (max-width: 1200px)
+                margin-top: 45px
+            @media (max-width: 800px)
+
+        &__catalog
+            background-color: $buttonColor
+            color: #fff
+            padding: 32px 64px
+            border: none
+            border-radius: 100px
+            cursor: pointer
+            max-width: 260px
+            
+            @media (max-width: 1360px)
+                margin-right: 20px
+        &__callUs
+            display: flex
+            border: none
+            background: none
+            cursor: pointer
+            align-items: center
+            padding: 32px 50px
+            color: $buttonColor
+            img
+                margin-right: 13px
+
+
+
+
+
+.whyus
+    margin-top: 50px
+    position: relative
+    &-title
+        position: absolute
+        color: #fff
+        top: 110px
+        font-size: 96px
+        margin: 0
+        @media (max-width: 1360px)
+            font-size: 70px
+        @media (max-width: 1100px)
+            font-size: 50px
+            top: 80px
+        @media (max-width: 900px)
+            font-size: 40px
+            top: 60px
+        @media (max-width: 650px)
+            font-size: 40px
+            top: 40px
+    &-wrap
+        width: 90%
+        margin: auto
+        
+    &-info
+        top: 400px
+        position: absolute
+        display: flex
+        width: 95%
+        
+        @media (max-width: 467px)
+            margin-top: 30px
+            background-color: #a6a6a6
+
+        @media (max-width: 620px)
+            flex-wrap: wrap
+            color: #fff
+            width: 90%
+        @media (max-width: 1400px)
+            top: 300px
+        @media (max-width: 1100px)
+            top: 210px
+        @media (max-width: 900px)
+            top: 160px
+        @media (max-width: 650px)
+            top: 120px
+            
+
+.info
+    
+    &-speed
+        width: 33%
+        margin-right: 20px
+        @media (max-width: 620px)
+            width: 50%
+        @media (max-width: 467px)
+            width: 100%
+            margin-top: 30px
+        &__img
+            max-width: 42px
+            max-height: 52px
+            @media (max-width: 750px)
+                width: 30px
+                height: 37px
+            
+    &-exp 
+        width: 33%
+        margin-right: 20px
+        @media (max-width: 620px)
+            width: 40%
+        @media (max-width: 467px)
+            width: 100%
+            margin-top: 30px
+        &__img
+            max-width: 63px
+            max-height: 60px
+            @media (max-width: 750px)
+                width: 35px
+                height: 35px
+    &-trust
+        width: 33%
+        @media (max-width: 620px)
+            width: 100%
+            margin-top: 30px
+        &__img
+            max-width: 58px
+            max-height: 55px
+            @media (max-width: 750px)
+                width: 35px
+                height: 35px
+    
+.infoTitle
+    margin: 0
+    font-size: 36px
+    margin-top: 10px
+    line-height: 1.5
+    color: #fff
+    @media (max-width: 1360px)
+        font-size: 25px
+    @media (max-width: 900px)
+        font-size: 16px
+
+.infoText
+    font-size: 36px
+    line-height: 1.5
+    color: #717c93
+    @media (max-width: 1360px)
+        font-size: 25px
+    @media (max-width: 900px)
+        font-size: 16px
+
+        
+
+
+.bg
+    max-width: 1728px
+    height: 702px
+    width: 100%
+    @media (max-width: 550px)
+        height: 300px
+    @media (max-width: 1360px)
+        height: 550px
+    @media (max-width: 1100px)
+        height: 450px
+    @media (max-width: 900px)
+        height: 350px
+    @media (max-width: 650px)
+        height: 300px
+    @media (max-width: 620px)
+        height: 400px
+    @media (max-width: 467px)
+        height: 120px
+    
+        
+.plus
+    position: absolute
+    left: 45%
+    max-width: 366px
+    max-height: 366px
+    @media (max-width: 1550px)
+        width: 50%
+    @media (max-width: 1100px)
+        width: 25%
+    @media (max-width: 650px) 
+        width: 15%
+.binoculars
+    position: absolute
+    left: 80%
+    max-width: 175px
+    max-height: 175px
+    @media (max-width: 1550px)
+        width: 50%
+    @media (max-width: 1100px)
+        width: 15%
+    @media (max-width: 650px) 
+        width: 10%
+    
+
+            
+                
+                
+                
+                
