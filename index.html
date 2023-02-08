@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Run</title>
-    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="src/css/animate.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header class="header">
@@ -39,14 +40,14 @@
         </div>
     </header>
     <main>
-        <div class="main">
+        <section class="main">
             <div class="container">
                 <div class="main-wrap">
                     <div class="main-info">
                         <h1 class="main-info__title">Prodáváme <br> elektro- <br> koloběžky</h1>
                         <span class="main-info__subtitle">Katalog 38 modelů koloběžek. Každá z nich bude doručena v den objednávky, díky naší logistické technologii a inovacím.</span>
                         <div class="main-info__buttons">
-                            <button class="main-info__catalog">
+                            <button class="main-info__catalog btn">
                                 Zobrazit katalog
                             </button>
                             <button class="main-info__callUs">
@@ -55,14 +56,11 @@
                             </button>
                         </div>
                     </div>
-                    <div class="main-scootSlider">
-                        <div class="main-scootSlider-thing">
+                    <div class="main-Slider">
+                        <div class="main-Slider-thing">
                             <img src="src/img/scooter.png" style="width: 100%" alt="" class="">
                             <div class="point1">
-                                <div class="square1">
-
-                                </div>
-                                
+                                <div class="square1"></div>
                                 <div class="line11"></div>
                                 <div class="divthing"></div>
                             </div>
@@ -70,11 +68,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="whyus">
+        <section class="whyus">
             <div class="container">
-                <div class="whyus">
+                <div class="whyus wow animate__animated animate__fadeInUp">
                     <div class="whyus-block">
                         <div class="whyus-wrap">
                             <h2 class="whyus-title">Proč my</h2>
@@ -102,7 +100,57 @@
                     </div>                    
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer">
+                    <h3 class="offer-title">V prodeji</h3>
+
+                        <div class="offer-slider">
+                            <div class="offer-item">
+                                <div class="offer-slider__info">
+                                    <div class="offer-slider__title">MIDWAY Yamato 0810</div>
+                                    <div class="offer-slider__subtitle">Baterie 6800 Ah, <br> max. rychlost 30 km/h, <br> max. zatížení 120 kg</div>
+                                    <button class="offer-slider__button btn">
+                                        <div class="offer-slider__button-text">
+                                            <img src="src/img/bag.svg" alt="">
+                                            <span>Koupit za</span>
+                                        </div>
+                                        <span class="offer-slider__button-price">18 490 kč</span>
+                                    </button>
+                                </div>
+                                <div class="offer-item__img">
+                                    <img src="src/img/scooter-slider-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="offer-item">
+                                <div class="offer-slider__info">
+                                    <div class="offer-slider__title">AOVO S3 2021</div>
+                                    <div class="offer-slider__subtitle">Baterie 5380 Ah, <br> max. rychlost 24 km/h, <br> max. zatížení 132 kg</div>
+                                    <button class="offer-slider__button btn">
+                                        <div class="offer-slider__button-text">
+                                            <img src="src/img/bag.svg" alt="">
+                                            <span>Koupit za</span>
+                                        </div>
+                                        <span class="offer-slider__button-price">17 900 kč</span>
+                                    </button>
+                                </div>
+                                <div class="offer-item__img">
+                                    <img src="src/img/scooter-slider-2.png" alt="">
+                                </div>
+                            </div>
+    
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="src/jquery-3.6.3.min.js"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script src="src/js/wow.min.js"></script>
+    <script src="src/js/jquery.validate.min.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
