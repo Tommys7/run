@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Run</title>
     <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/slick-theme.css">
     <link rel="stylesheet" href="src/css/animate.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -23,7 +24,7 @@
                         <span>Menu</span>
                     </button>
                 </div>
-                <div class="header-menu">
+                <div class="header-invdiv">
                 </div>
                 <div class="header-shop">
                     <div class="header-shop__cart">
@@ -58,12 +59,55 @@
                         </div>
                     </div>
                     <div class="main-Slider">
-                        <div class="main-Slider-thing">
-                            <img src="src/img/scooter.png" style="width: 100%" alt="" class="">
+                        <div class="main-Slider__wrap">
+                            <img src="src/img/scooter.png"  alt="" class="mainSliderImg">
+                            <div class="main-slider__box">
+
+                                <div class="main-slider__slider">
+                                    <div class="main-slider__item">
+                                    
+                                        <div class="main-slider__textBox">
+                                            <span class="main-slider__text">
+                                                Ninenot Kickscooter Max G30 
+                                            </span>
+                                            <span class="main-slider__subtext">
+                                                Top model
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="main-slider__item">
+                                        
+                                        <div class="main-slider__textBox">
+                                            <span class="main-slider__text">
+                                                Cena : 
+                                            </span>
+                                            <span class="main-slider__subtext">
+                                                17899,-
+                                            </span>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                                
+                            </div>
                             <div class="point1">
-                                <div class="square1"></div>
-                                <div class="line11"></div>
-                                <div class="divthing"></div>
+                                <div class="point1-square1"></div>
+                                <div class="point1-square2"></div>
+                                <div class="point1-line11"></div>
+                                <div class="point1-box">
+                                    <img class="point1-maxSpeedImg" src="src/img/iconSpeed-30.svg" alt="">
+                                    <span class="point1-text">Maximální <br> rychlost 30km/h</span>
+                                </div>
+                            </div>
+                            <div class="point2">
+                                <div class="point2-square1"></div>
+                                <div class="point2-square2"></div>
+                                <div class="point2-line11"></div>
+                                <div class="point2-box">
+                                    <img class="point2-accumImg" src="src/img/iconAccum.svg" alt="">
+                                    <span class="point2-text">Baterie <br> 6800 А·ч</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -109,62 +153,145 @@
                     <h3 class="offer-title">V prodeji</h3>
                     <div class="offer-slider">
                         
-                        <div class="offer-slider__box">
-                            <div class="offer-item">
-                                <div class="offer-slider__info">
-                                    <div class="offer-slider__title">MIDWAY Yamato 0810</div>
-                                    <div class="offer-slider__subtitle">Baterie 6800 Ah, <br> max. rychlost 30 km/h, <br> max. zatížení 120 kg</div>
-                                    <button class="offer-slider__button btn">
-                                        <div class="offer-slider__button-text">
-                                            <img src="src/img/bag.svg" alt="">
-                                            <span>Koupit za</span>
-                                        </div>
-                                        <span class="offer-slider__button-price">18 490 kč</span>
-                                    </button>
-                                </div>
-                                <div class="offer-item__img">
-                                    <img src="src/img/scooter-slider-1.png" alt="">
-                                </div>
+                        
+                        <div class="offer-item">
+                            <div class="offer-slider__info">
+                                <div class="offer-slider__title">MIDWAY Yamato 0810</div>
+                                <div class="offer-slider__subtitle">Baterie 6800 Ah, <br> max. rychlost 30 km/h, <br> max. zatížení 120 kg</div>
+                                <button class="offer-slider__button btn">
+                                    <div class="offer-slider__button-text">
+                                        <img src="src/img/bag.svg" alt="">
+                                        <span>Koupit za</span>
+                                    </div>
+                                    <span class="offer-slider__button-price">18 490 kč</span>
+                                </button>
+                            </div>
+                            <div class="offer-item__img">
+                                <img src="src/img/scooter-slider-1.png" alt="">
                             </div>
                         </div>
+                        
 
-                        <div class="offer-slider__box">
-                            <div class="offer-item">
-                                <div class="offer-slider__info">
-                                    <div class="offer-slider__title">AOVO S3 2021</div>
-                                    <div class="offer-slider__subtitle">Baterie 5380 Ah, <br> max. rychlost 24 km/h, <br> max. zatížení 132 kg</div>
-                                    <button class="offer-slider__button btn">
-                                        <div class="offer-slider__button-text">
-                                            <img src="src/img/bag.svg" alt="">
-                                            <span>Koupit za</span>
-                                        </div>
-                                        <span class="offer-slider__button-price">17 900 kč</span>
-                                    </button>
-                                </div>
-                                <div class="offer-item__img">
-                                    <img src="src/img/scooter-slider-2.png" alt="">
-                                </div>
+                        <!--
+                        <div class="offer-item">
+                            <div class="offer-slider__info">
+                                <div class="offer-slider__title">AOVO S3 2021</div>
+                                <div class="offer-slider__subtitle">Baterie 5380 Ah, <br> max. rychlost 24 km/h, <br> max. zatížení 132 kg</div>
+                                <button class="offer-slider__button btn">
+                                    <div class="offer-slider__button-text">
+                                        <img src="src/img/bag.svg" alt="">
+                                        <span>Koupit za</span>
+                                    </div>
+                                    <span class="offer-slider__button-price">17 900 kč</span>
+                                </button>
+                            </div>
+                            <div class="offer-item__img">
+                                <img src="src/img/scooter-slider-2.png" alt="">
                             </div>
                         </div>
+                        -->
 
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="feedback">
+            <div class="container">
+               
+                <h3 class="feedback-title">Klienti <br> říkají</h3>
+                <div class="feedback-wrap">
+                    <div class="feedback-slider">
+                        
+                        <div class="feedback-item__box">
+                            <div class="feedback-item">
+                                <div class="feedback-model">
+                                    <span class="feedback-model__modelText">
+                                        Model
+                                    </span>
+                                    <span class="feedback-model__modelName">
+                                        KugoSun 08
+                                    </span>
+                                </div>
+                                <div class="feedback-img">
+                                    <img src="src/img/scooter-feedback.png" alt="">
+                                </div>
+                                <div class="feedback-text">
+                                    <span>Je fajn jezdit s celou rodinou večerní Prahou. <h3>Jedno nabití vystačí na 3 hodiny.</h3> Kéž by byla příležitost...</span>
+                                    <div class="feedback-arrows">
+                                        <div class="feedback-prevArrow">
+                                            <img src="src/img/prevArrow.png" alt="">
+                                        </div>
+                                        <div class="feedback-nextArrow">
+                                            <img src="src/img/nextArrow.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-fakeEl"></div>
+                                    <div class="feedback-fakeEl"></div>
+                                    <div class="feedback-authorName">
+                                        <span> Kateřina <br> Vosyková</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="feedback-item__box">
+                            <div class="feedback-item">
+                                <div class="feedback-model">
+                                    <span class="feedback-model__modelText">
+                                        Model
+                                    </span>
+                                    <span class="feedback-model__modelName">
+                                        KugoSun 08
+                                    </span>
+                                </div>
+                                <div class="feedback-img">
+                                    <img src="src/img/scooter-feedback.png" alt="">
+                                </div>
+                                <div class="feedback-text">
+                                    <span>Je fajn jezdit s celou rodinou večerní Prahou. <h3>Jedno nabití vystačí na 3 hodiny.</h3> Kéž by byla příležitost...</span>
+                                    <div class="feedback-arrows">
+                                        <div class="feedback-prevArrow">
+                                            <img src="src/img/prevArrow.png" alt="">
+                                        </div>
+                                        <div class="feedback-nextArrow">
+                                            <img src="src/img/nextArrow.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-fakeEl"></div>
+                                    <div class="feedback-fakeEl"></div>
+                                    <div class="feedback-authorName">
+                                        <span> Kateřina <br> Vosyková</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
     </main>
+
+
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-block">
-                <div class="footer-logo">
+            <div class="footer-logo">
                     <img src="src/img/footer-logo.png" alt="">
                 </div>
+            <div class="footer-block">
+                
                 <div class="footer-coop footer-box">
                     <a href="" class="footer-bold">Spolupráce</a>
                     <a href="" class="footer-reg">Novinky</a>
                     <a href="" class="footer-reg">Affiliate program</a>
                     <a href="" class="footer-reg">O výrobě</a>
                     <a href="" class="footer-reg">Pracovní místa</a>
-                    <a href="" class="footer-grey">Zásady ochrany osobních údajů</a>
+                    
                 </div>
                 <ul class="footer-buyer footer-box">
                     <a href="" class="footer-bold">Pro kupující  </a>
@@ -172,7 +299,8 @@
                     <a href="" class="footer-reg">Platba a doručení</a>
                     <a href="" class="footer-reg">Zpětná vazba</a>
                     <a href="" class="footer-reg">Vrácení</a>
-                    <a href="" class="footer-grey">Zodpovědnost</a>
+                    
+
                 </ul>
                 <div class="footer-socials">
                     <span class="footer-socials__mail">hello@run.cz</span>
@@ -180,13 +308,26 @@
                         <a href=""><img src="src/img/Frame.svg" alt="messenger"></a>
                         <a href=""><img src="src/img/Frame-1.svg" alt=""></a>
                         <a href=""><img src="src/img/Frame-2.svg" alt="youtube"></a>
-                        <a href=""><img src="src/img/Frame-3.svg" alt="linkedin"></a>
+                        <a href=""><img src="src/img/Frame-3.svg" alt="linkedin"></a>                      
                     </div>
+
+                </div>
+            </div>
+            <div class="footer-rights">
+                
+                <div class="footer-data">
+                    <a href="" class="footer-rightsText">Zásady ochrany osobních údajů</a>
+                </div>
+                <div class="footer-responsibility">
+                    <a href="" class="footer-rightsText">Zodpovědnost</a>
+                </div>
+                <div class="footer-rightsbox">
+                    <a href="" class="footer-rightsText">© 2009-2022. RUN Všechna práva vyhrazena</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/jquery-3.6.3.min.js"></script>
     <script src="src/js/slick.min.js"></script>
     <script src="src/js/wow.min.js"></script>
     <script src="src/js/jquery.validate.min.js"></script>
